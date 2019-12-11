@@ -192,7 +192,21 @@ class LinkedList:
 			start = start.next
 		
 		print("not Found")
-		return print(False)		
+		return print(False)
+
+	def reverse_list(self):
+		"""
+		This will reverse a list  
+		"""
+		prev = None
+		start = self.head
+		while start is not None:
+			next = start.next
+			start.next = prev
+			prev = start
+			start = next
+		self.head = prev	
+
 
 list = LinkedList()
 list.head = Node(1)
@@ -204,9 +218,10 @@ second.next = third
 # list.insert_item_at_location(4,600)
 # list.pop_last()
 # list.remove(2)
+list.reverse_list()
 list.print_list()
-list.count()
-list.search(9)
+# list.count()
+# list.search(9)
 # list.pop_first()
 # list.tail()
 # list.print_list()
