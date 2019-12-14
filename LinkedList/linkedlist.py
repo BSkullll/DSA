@@ -218,8 +218,10 @@ second.next = third
 # list.insert_item_at_location(4,600)
 # list.pop_last()
 # list.remove(2)
-list.reverse_list()
+# list.reverse_list()
+list.insert_item_after_item(3,100)
 list.print_list()
+
 # list.count()
 # list.search(9)
 # list.pop_first()
